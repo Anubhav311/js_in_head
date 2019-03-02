@@ -9,7 +9,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <script src="index.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -24,7 +24,7 @@
                 <div class="input-text">
                     <h2>Input</h2>
                 </div>
-                <div class="input-code">
+                <div id="input-code" class="input-code">
                     
                 </div>
             </div>
@@ -32,28 +32,38 @@
                 <div class="algorithm-text">
                     <h2>Algorithm</h2>
                 </div>
-                <div class="algorithm-code">
+                <div id="algorithm-code" class="algorithm-code">
 
                 </div>
             </div>
             <div class="form">
-                <form name="myForm" method="post">
-                    Name: <input type="text" name="fname">
-                    <input type="submit" value="Submit">
+                <form id="form" onsubmit="return false;">
+                    Name: <input type="text" id="output">
+                    <input type="submit" onclick="saveValue()">
                 </form>
             </div>
-            <!-- <script>
-                function validateForm() {
-                    var x = document.forms["myForm"]["fname"].value;
-                    if (x == "") {
-                        alert("Name must be filled out");
-                        return false;
-                    } else {
-                        alert("You gave a good input!");
-                        return false;
-                    }
-                }
-            </script> -->
+            <script>
+                document.getElementById("input-code").innerHTML = input;
+                document.getElementById("algorithm-code").innerHTML = algorithms; 
+
+                // function saveValue() {
+                //     let varb = document.getElementById("output").value;
+                //     console.log(varb);
+                // }
+
+                // let varb = document.getElementById("output");
+                // console.log(varb);
+                // function validateForm() {
+                    // var x = document.getElementById("output");
+                    // if (x == "") {
+                    //     alert("Name must be filled out");
+                    //     return false;
+                    // } else {
+                    //     alert("You gave a good input!");
+                    //     return false;
+                    // }
+                // }
+            </script>
         </div>
     </div>
 </body>
