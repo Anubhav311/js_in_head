@@ -128,7 +128,7 @@ table {
 }
 .container {
   height: 100%;
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 h1 {
@@ -152,12 +152,32 @@ h1 {
   margin: 30px 0;
 }
 .main-content .input-container .input-code {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background-color: lightgray;
   border: 2px solid grey;
   border-radius: 10px;
   padding: 5px;
+}
+.main-content .input-container .prev {
+  box-sizing: border-box;
+  background-color: yellow;
+  width: 80px;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main-content .input-container .next {
+  box-sizing: border-box;
+  background-color: yellow;
+  width: 80px;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .main-content .algorithm-container {
   display: flex;
@@ -166,13 +186,33 @@ h1 {
   margin: 30px 0;
 }
 .main-content .algorithm-container .algorithm-code {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background-color: lightgray;
   border: 2px solid grey;
   border-radius: 10px;
   margin-right: 2%;
   padding: 5px;
+}
+.main-content .algorithm-container .prev {
+  box-sizing: border-box;
+  background-color: yellow;
+  width: 80px;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main-content .algorithm-container .next {
+  box-sizing: border-box;
+  background-color: yellow;
+  width: 80px;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .main-content .form {
   background-color: grey;

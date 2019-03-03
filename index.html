@@ -27,13 +27,26 @@
                 <div id="input-code" class="input-code">
                     
                 </div>
+                <div class="prev" onclick="indexValueOfInputDecrease()">
+                    <p>Prev</p>
+                </div>
+                <div class="next" onclick="indexValueOfInputIncrease()">
+                    <p>Next</p>
+                </div>
             </div>
             <div class="algorithm-container">
                 <div class="algorithm-text">
                     <h2>Algorithm</h2>
                 </div>
-                <div id="algorithm-code" class="algorithm-code">
+                <!-- <div id="algorithm-code" class="algorithm-code">
 
+                </div> -->
+                <img id="codeImage" src="" alt="">
+                <div class="prev" onclick="indexValueOfCodeDecrease()">
+                    <p>Prev</p>
+                </div>
+                <div class="next" onclick="indexValueOfCodeIncrease()">
+                    <p>Next</p>
                 </div>
             </div>
             <div class="form">
@@ -43,8 +56,9 @@
                 </form>
             </div>
             <script>
-                document.getElementById("input-code").innerHTML = input;
-                document.getElementById("algorithm-code").innerHTML = algorithms; 
+                document.getElementById("codeImage").src = imgVar;
+                // document.getElementById("input-code").innerHTML = input;
+                // document.getElementById("algorithm-code").innerHTML = algorithms; 
 
                 // function saveValue() {
                 //     let varb = document.getElementById("output").value;
